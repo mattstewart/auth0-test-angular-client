@@ -1,3 +1,10 @@
+/*
+ To prevent committing of secrets to the git repo
+ we will tell get to "ignore" changes in this file
+ by running'git update-index --assume-unchanged <file>'.
+ We can undo this by running 'git update-index --no-assume-unchanged <file>'.
+*/
+
 interface AuthConfig {
   clientID: string;
   domain: string;
